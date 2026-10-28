@@ -87,11 +87,11 @@ AB_all 与 P2 的数值不能混用。P3 有收入但无行为关联证据。
 ## 7. 六条 headline 结论台账
 
 supported：证据和表述均支持；partially supported：部分数字可复核但解释、范围或前提需修订；
-cannot verify：现有资料不能验证。没有强行给六条旧表述分配 supported，不代表基础统计不可用。
+contradicted：现有证据与旧表述方向相反；cannot verify：现有资料不能验证。没有强行给六条旧表述分配 supported，不代表基础统计不可用。
 
 | id | original_headline | population | status | evidence_and_limits | revised_claim |
 | --- | --- | --- | --- | --- | --- |
-| H1 | 增长全靠拉新 | P1 | partially supported | 注册与DAU趋势未做贡献分解；相邻90日比较与现有首尾90日实现不一致 | 注册、活跃增长并存；新老用户贡献需分解后再归因 |
+| H1 | 增长全靠拉新 | P1 | contradicted | 相邻90日活跃构成分解：注册未满30日用户贡献+479.04（23.40%），较老用户贡献+1568.29（76.60%）；原结论不成立 | 增长由新老用户共同贡献；这是活跃构成的加法分解，不是获客渠道归因 |
 | H2 | 五年留存不变，产品迭代无效 | P1 | partially supported | 02_retention.py只取最近12个注册月；无版本/迭代信息 | 报告实际观察区间；不能判断产品迭代效果 |
 | H3 | 全量付费率0.92%，鲸鱼贡献43.5% | AB_all | partially supported | 付费数据只覆盖AB样本，不能外推100万注册用户 | 明确AB全表或P2分母；全量付费率无法计算 |
 | H4 | 付费用户整体沉睡2.7年/94.6%用户已死 | P2 + P3 | partially supported | 候选ID关联待证；早期队列偏差；未匹配被填0和最大recency | 仅报告P2截至截断日的未活跃时间；P3行为未知；旧聚类比例不可继续引用 |

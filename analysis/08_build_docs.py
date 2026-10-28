@@ -192,7 +192,7 @@ SQL执行引擎SQLite {sql['sqlite_version']}；原始CSV重新加载建库，�
 
 ## 改造范围与可恢复性
 
-保留原数据、Git历史和用户笔记本，不创建提交或覆盖用户其他项目。改造前工作区（含未提交脚本）已另行备份交付。根目录原笔记本保留作历史入口，可能含旧输出，当前交付入口为 `python run_all.py`，不要混用旧Notebook输出。
+保留原数据、Git历史与用户笔记本，不覆盖用户其他项目。改造前版本可通过 Git 历史恢复；根目录原笔记本保留作历史入口，可能含旧输出，当前交付入口为 `python run_all.py`，不要混用旧Notebook输出。
 BI按岗位需要再选做；本次交付现有Matplotlib分人群单页看板，不新增无依据的业务漏斗或实验结果。
 """
     (D/"validation.md").write_text(validation,encoding="utf8")
