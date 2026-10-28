@@ -1,0 +1,4 @@
+﻿source,rows,unique_users,duplicate_rows,null_cells
+reg,1000000,1000000,0,0
+auth,9601013,1000000,0,0
+ab,404770,404770,0,0

@@ -1,0 +1,5 @@
+﻿rfm,users,mean_recent_active_days,median_recency,payer_rate,mean_cumulative_revenue
+R_1_7d_F_ge4_M_nonpayer,18098,7.50618852911924,3.0,0.0,0.0
+R_1_7d_F_ge4_M_payer,180,7.522222222222222,2.0,1.0,2460.7833333333333
+R_gt30d_F_lt4_M_nonpayer,343122,0.0,1031.0,0.0,0.0
+R_gt30d_F_lt4_M_payer,3155,0.0,1032.0,1.0,2933.140729001585

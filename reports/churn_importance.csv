@@ -1,0 +1,4 @@
+﻿feature,importance,method
+login_cnt,0.021017538,SHAP mean absolute value
+days_since_last_login,9.792241,SHAP mean absolute value
+max_gap,0.17929555,SHAP mean absolute value

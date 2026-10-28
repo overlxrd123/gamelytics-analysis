@@ -1,0 +1,42 @@
+[
+  {
+    "step": "00_data_audit.py",
+    "exit_code": 0,
+    "seconds": 20.779
+  },
+  {
+    "step": "01_health.py",
+    "exit_code": 0,
+    "seconds": 15.059
+  },
+  {
+    "step": "02_retention.py",
+    "exit_code": 0,
+    "seconds": 28.239
+  },
+  {
+    "step": "03_monetization.py",
+    "exit_code": 0,
+    "seconds": 13.001
+  },
+  {
+    "step": "04_segmentation.py",
+    "exit_code": 0,
+    "seconds": 13.885
+  },
+  {
+    "step": "05_churn.py",
+    "exit_code": 0,
+    "seconds": 23.961
+  },
+  {
+    "step": "06_conclusion.py",
+    "exit_code": 0,
+    "seconds": 12.347
+  },
+  {
+    "step": "07_sql_reconcile.py",
+    "exit_code": 0,
+    "seconds": 74.55
+  }
+]

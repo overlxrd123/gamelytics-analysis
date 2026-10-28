@@ -1,0 +1,12 @@
+{
+  "boundary_reg_date": "2020-04-13",
+  "first_test_prediction": "2020-04-27",
+  "max_train_label_end": "2020-04-27",
+  "train_users": 747923,
+  "test_users": 191488,
+  "embargo_excluded": 16160,
+  "snapshot_exclusive": "2020-09-23",
+  "label": "no login on relative days 14..27",
+  "tie_policy": "expected precision/recall under uniform random ties",
+  "capacity_fraction": 0.1
+}

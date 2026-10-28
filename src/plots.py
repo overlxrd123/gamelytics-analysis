@@ -21,6 +21,7 @@ def setup() -> None:
 
 def savefig(fig, name: str) -> str:
     """保存图到 figures/，返回路径"""
+    config.FIG_DIR.mkdir(parents=True, exist_ok=True)
     path = config.FIG_DIR / name
     fig.savefig(path, bbox_inches="tight")
     plt.close(fig)

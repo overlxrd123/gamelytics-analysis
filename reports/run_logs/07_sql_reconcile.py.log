@@ -1,0 +1,6 @@
+                     query status  rows_compared  columns_compared         rtol         atol
+   01_matching_cohorts.sql   PASS            235                 4 1.000000e-10 1.000000e-10
+         02_ab_balance.sql   PASS              2                 6 1.000000e-10 1.000000e-10
+03_payment_populations.sql   PASS              3                 9 1.000000e-10 1.000000e-10
+   04_cohort_retention.sql   PASS            704                 5 1.000000e-10 1.000000e-10
+05_candidate_user_wide.sql   PASS         404770                 8 1.000000e-10 1.000000e-10

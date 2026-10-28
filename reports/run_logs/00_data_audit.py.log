@@ -1,0 +1,10 @@
+Audit complete: D:\Projects\gamelytics_analysis\docs\data_audit.md
+group  users  matched  unmatched  match_rate  auth_match_rate
+  all 404770   364555      40215    0.900647         0.900647
+    a 202103   181982      20121    0.900442         0.900442
+    b 202667   182573      20094    0.900852         0.900852
+    population    a_n    b_n  a_payer_rate  b_payer_rate  diff_a_minus_b  relative_lift_a_vs_b  diff_ci95_low  diff_ci95_high  two_sided_z_p    a_arpu    b_arpu
+AB_all_primary 202103 202667      0.009540      0.008906        0.000633              0.071125       0.000044        0.001222       0.035029 25.413720 26.751287
+P2_sensitivity 181982 182573      0.009468      0.008829        0.000639              0.072330       0.000020        0.001257       0.042867 26.658939 26.540359
+P3_descriptive  20121  20094      0.010188      0.009605        0.000584              0.060751      -0.001351        0.002518       0.554491 14.151484 28.667762
+Accounting checks passed. Evidence: D:\Projects\gamelytics_analysis\reports\data_audit

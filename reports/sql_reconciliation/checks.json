@@ -1,0 +1,54 @@
+{
+  "sqlite_version": "3.51.0",
+  "database": "data/audit.sqlite (ignored; recreated each run)",
+  "elapsed_seconds": 73.898,
+  "checks": [
+    {
+      "query": "01_matching_cohorts.sql",
+      "status": "PASS",
+      "rows_compared": 235,
+      "columns_compared": 4,
+      "rtol": 1e-10,
+      "atol": 1e-10
+    },
+    {
+      "query": "02_ab_balance.sql",
+      "status": "PASS",
+      "rows_compared": 2,
+      "columns_compared": 6,
+      "rtol": 1e-10,
+      "atol": 1e-10
+    },
+    {
+      "query": "03_payment_populations.sql",
+      "status": "PASS",
+      "rows_compared": 3,
+      "columns_compared": 9,
+      "rtol": 1e-10,
+      "atol": 1e-10
+    },
+    {
+      "query": "04_cohort_retention.sql",
+      "status": "PASS",
+      "rows_compared": 704,
+      "columns_compared": 5,
+      "rtol": 1e-10,
+      "atol": 1e-10
+    },
+    {
+      "query": "05_candidate_user_wide.sql",
+      "status": "PASS",
+      "rows_compared": 404770,
+      "columns_compared": 8,
+      "rtol": 1e-10,
+      "atol": 1e-10
+    }
+  ],
+  "sql_sha256": {
+    "01_matching_cohorts.sql": "abe527fedadd240156854dd720a5946516a1f978754db60bee5185160162f198",
+    "02_ab_balance.sql": "00981118348152e9e100cccc24bf5203007c57ceccf16961be4885bd89b7cc0d",
+    "03_payment_populations.sql": "e67e32c8dec4823e91ddeec330f5105269551573bb589a8645f1d0163697879f",
+    "04_cohort_retention.sql": "40b19aea46ffb6e360d39ab40262d3551527bbbb6c2091899debdf1bc29c4257",
+    "05_candidate_user_wide.sql": "b89f407308d266c1d194955a6c9ff1f04235db49ad935f9aa53b08c664a45329"
+  }
+}

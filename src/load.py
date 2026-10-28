@@ -9,7 +9,7 @@ import pandas as pd
 
 from . import config
 
-# 时间戳统一转 datetime（UTC，无时区；合成数据不必关心时区）
+# Unix秒按UTC解释，使用无时区UTC日期；不推断业务当地时区。
 def _ts_to_dt(s: pd.Series) -> pd.Series:
     return pd.to_datetime(s, unit="s")
 

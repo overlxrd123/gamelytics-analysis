@@ -1,0 +1,7 @@
+﻿id,original_headline,population,status,evidence_and_limits,revised_claim
+H1,增长全靠拉新,P1,partially supported,注册与DAU趋势未做贡献分解；相邻90日比较与现有首尾90日实现不一致,注册、活跃增长并存；新老用户贡献需分解后再归因
+H2,五年留存不变，产品迭代无效,P1,partially supported,02_retention.py只取最近12个注册月；无版本/迭代信息,报告实际观察区间；不能判断产品迭代效果
+H3,全量付费率0.92%，鲸鱼贡献43.5%,AB_all,partially supported,付费数据只覆盖AB样本，不能外推100万注册用户,明确AB全表或P2分母；全量付费率无法计算
+H4,付费用户整体沉睡2.7年/94.6%用户已死,P2 + P3,partially supported,候选ID关联待证；早期队列偏差；未匹配被填0和最大recency,仅报告P2截至截断日的未活跃时间；P3行为未知；旧聚类比例不可继续引用
+H5,AB差异显著但无实际意义，应不上线,AB_all主分析/P2敏感性,partially supported,付费率名义显著性可复算；随机化、实验周期和成本无法核实,统计差异与业务收益分开；证据不足以建议全量上线
+H6,拉新→留存→付费→沉睡因果链,混用P1与AB样本,cannot verify,人群不一致；描述统计和预测不能识别因果,拆成独立证据与待验证假设，不画已证实因果链

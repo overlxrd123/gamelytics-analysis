@@ -1,0 +1,11 @@
+{
+  "status": "hypothetical_not_historical_design",
+  "control_payer_rate": 0.008906235351586593,
+  "absolute_mde": 0.001,
+  "alpha": 0.05,
+  "power": 0.8,
+  "n_per_group": 146267,
+  "allocation": "1:1",
+  "duration": "unknown",
+  "cost_unit": "unknown"
+}

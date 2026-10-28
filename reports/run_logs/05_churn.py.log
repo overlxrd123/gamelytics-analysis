@@ -1,0 +1,15 @@
+           split        model  train_users  test_users  test_positive_rate  roc_auc  average_precision  capacity_fraction  selected  precision_at_capacity  recall_at_capacity
+temporal_primary recency_only       747923      191488            0.815759 0.986018           0.996669                0.1     19148                    1.0             0.12258
+temporal_primary     logistic       747923      191488            0.815759 0.985856           0.997085                0.1     19148                    1.0             0.12258
+temporal_primary      xgboost       747923      191488            0.815759 0.986198           0.997149                0.1     19148                    1.0             0.12258
+temporal_primary     lightgbm       747923      191488            0.815759 0.986075           0.997059                0.1     19148                    1.0             0.12258
+random_reference recency_only       764456      191115            0.816707 0.985817           0.996635                0.1     19111                    1.0             0.12244
+random_reference     logistic       764456      191115            0.816707 0.985584           0.997044                0.1     19111                    1.0             0.12244
+random_reference      xgboost       764456      191115            0.816707 0.985989           0.997107                0.1     19111                    1.0             0.12244
+random_reference     lightgbm       764456      191115            0.816707 0.985880           0.997031                0.1     19111                    1.0             0.12244
+ days_threshold  selected  selected_fraction  precision   recall
+              3    172983           0.903362   0.892504 0.988349
+              5    159084           0.830778   0.958783 0.976435
+              7    151698           0.792206   0.994931 0.966205
+             10    147945           0.772607   1.000000 0.947103
+Threshold comparison is exploratory, not a proven intervention policy; high AUC is not proof of external validity.
