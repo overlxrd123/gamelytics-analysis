@@ -4,20 +4,26 @@
 
 | step | exit_code | seconds |
 | --- | --- | --- |
-| 00_data_audit.py | 0 | 20.779000 |
-| 01_health.py | 0 | 15.059000 |
-| 02_retention.py | 0 | 28.239000 |
-| 03_monetization.py | 0 | 13.001000 |
-| 04_segmentation.py | 0 | 13.885000 |
-| 05_churn.py | 0 | 23.961000 |
-| 06_conclusion.py | 0 | 12.347000 |
-| 07_sql_reconcile.py | 0 | 74.550000 |
+| 00_data_audit.py | 0 | 11.840000 |
+| 01_health.py | 0 | 9.781000 |
+| 02_retention.py | 0 | 16.549000 |
+| 03_monetization.py | 0 | 11.811000 |
+| 04_segmentation.py | 0 | 14.092000 |
+| 05_churn.py | 0 | 15.237000 |
+| 06_conclusion.py | 0 | 8.048000 |
+| 07_sql_reconcile.py | 0 | 40.348000 |
 
 边界测试输出：
 
 ```text
 ......                                                                   [100%]
-6 passed in 1.77s
+============================== warnings summary ===============================
+..\..\Users\admin\Anaconda33\Lib\site-packages\_pytest\cacheprovider.py:475
+  D:\Users\admin\Anaconda33\Lib\site-packages\_pytest\cacheprovider.py:475: PytestCacheWarning: could not create cache path D:\Projects\gamelytics_analysis\.pytest_cache\v\cache\nodeids: [WinError 5] 拒绝访问。: 'D:\\Projects\\gamelytics_analysis\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+6 passed, 1 warning in 1.77s
 ```
 
 SQL执行引擎SQLite 3.51.0；原始CSV重新加载建库，非手工输入结果。浮点容差rtol=atol=1e-10。

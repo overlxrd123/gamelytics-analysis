@@ -1,2 +1,8 @@
 ......                                                                   [100%]
-6 passed in 1.77s
+============================== warnings summary ===============================
+..\..\Users\admin\Anaconda33\Lib\site-packages\_pytest\cacheprovider.py:475
+  D:\Users\admin\Anaconda33\Lib\site-packages\_pytest\cacheprovider.py:475: PytestCacheWarning: could not create cache path D:\Projects\gamelytics_analysis\.pytest_cache\v\cache\nodeids: [WinError 5] 拒绝访问。: 'D:\\Projects\\gamelytics_analysis\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+6 passed, 1 warning in 1.77s

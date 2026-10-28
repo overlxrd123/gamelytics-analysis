@@ -18,9 +18,9 @@ def main():
         print(name,"PASS" if result.returncode==0 else "FAIL",flush=True)
         if result.returncode:
             print("See",logs/(name+".log"));return result.returncode
-    tests=subprocess.run([sys.executable,"-m","pytest","tests","-q"],cwd=ROOT,env=env,capture_output=True,text=True)
-    (logs/"tests.log").write_text(tests.stdout+tests.stderr,encoding="utf8")
-    if tests.returncode:print(tests.stdout,tests.stderr);return tests.returncode
+    tests=subprocess.run([sys.executable,"-m","pytest","tests","-q"],cwd=ROOT,env=env,capture_output=True,text=True,encoding="utf-8",errors="replace")
+    (logs/"tests.log").write_text((tests.stdout or "")+(tests.stderr or ""),encoding="utf8")
+    if tests.returncode:print((tests.stdout or "")+(tests.stderr or ""));return tests.returncode
     return subprocess.run([sys.executable,str(ROOT/"analysis/08_build_docs.py")],cwd=ROOT,env=env).returncode
 
 if __name__=="__main__":sys.exit(main())

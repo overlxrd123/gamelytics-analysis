@@ -14,6 +14,10 @@ def main():
     reg, auth, end = metrics.snapshot(reg, auth)
     pairs = metrics.user_days(reg, auth)
     strict = metrics.retention(reg, pairs, end, range(1,31))
+    # A zero here would silently corrupt the retention curve; fail the pipeline instead.
+    zero = strict.loc[strict.retained.eq(0), ["day", "eligible"]]
+    if not zero.empty:
+        raise AssertionError("Retention produced zero returns on observed days:\n" + zero.to_string(index=False))
     cohort = metrics.retention(reg, pairs, end, (1,7,30), True)
     first = pairs.loc[pairs.day.ge(1)].groupby("uid").day.min()
     rows = []
